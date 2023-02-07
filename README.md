@@ -27,10 +27,9 @@ This project is setup to use yarn.
 
 to get started.
 
-`run yarn prep`
+`run yarn`
 
-This will install husky and then download and install the nodule modules
-Husky is used to run the linting.
+This will install the nodule modules
 
 # Dev Build
 
