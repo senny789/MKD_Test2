@@ -1,7 +1,7 @@
-import React, { memo, ReactNode, useCallback, useRef, useState } from "react";
+import React, { memo, ReactNode, useCallback, useRef, useState } from 'react';
 
-import { areEqualShallow } from "Utils/equalityChecks";
-import { useDebounce } from "Hooks/useDebounce";
+import { areEqualShallow } from 'Utils/equalityChecks';
+import { useDebounce } from 'Hooks/useDebounce';
 
 interface Props {
   id?: string;
@@ -38,16 +38,16 @@ const Form = ({ id, className, noValidate = true, submitButton, onSubmit, childr
   const onSubmitLocal = useDebounce((e: any) => {
     e.preventDefault();
 
-    formRef.current.classList.add("was-validated");
+    formRef.current.classList.add('was-validated');
 
-    let value = "";
+    let value = '';
     switch (e.target.type) {
-      case "checkbox":
+      case 'checkbox':
         value = e.target.checked;
         break;
-      case "text":
-      case "tel":
-      case "email":
+      case 'text':
+      case 'tel':
+      case 'email':
         value = e.target.value.trim();
         break;
       default:
@@ -57,7 +57,7 @@ const Form = ({ id, className, noValidate = true, submitButton, onSubmit, childr
     // This will handle an empty input
     if (value?.length === 0) {
       validate({ [e.target.name]: e.target.value, isValid: true });
-      formRef.current.classList.remove("was-validated");
+      formRef.current.classList.remove('was-validated');
       return;
     }
 
@@ -99,7 +99,7 @@ const Form = ({ id, className, noValidate = true, submitButton, onSubmit, childr
         }}
         onSubmit={(submitButton && onSubmitLocal) || submitWhenNoSubmitButton}
         id={id}
-        className={`requires-validation ${className || ""}`}
+        className={`requires-validation ${className || ''}`}
         noValidate={noValidate}
       >
         {children}

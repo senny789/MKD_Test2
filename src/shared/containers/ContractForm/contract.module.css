@@ -1,0 +1,67 @@
+button {
+  border-radius: 50px;
+  border: 1px solid #9a00ff;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  color: #9a00ff;
+  width: 200px;
+  background: transparent;
+}
+.head {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+table {
+  width: 100%;
+}
+
+th {
+  padding-left: 72px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #777185;
+  padding-bottom: 1.2em;
+  border-bottom-width: 1px;
+
+  border-bottom-color: #e8e7ed !important;
+}
+td {
+  padding-left: 72px;
+  padding-block: 1rem;
+  border-bottom-width: 1px;
+  border-bottom-color: #e8e7ed !important;
+}
+.actionButton {
+  border: 1px red solid;
+  background: transparent;
+  border-width: 1px;
+  color: red;
+}
+.text {
+  text-align: center;
+}
+
+.textArea {
+  display: flex;
+}
+.addBtn {
+  background-color: #8701f6;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.buttonGroup {
+  margin: 1rem;
+}
+.actionCancelButton {
+  border: 1px gray solid;
+
+  background: transparent;
+  color: gray;
+}
+.tabBody {
+  padding: 1rem;
+}

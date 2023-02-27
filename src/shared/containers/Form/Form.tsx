@@ -11,7 +11,7 @@ interface Props {
   children: any;
   onSubmit: (formValues: any) => void;
 }
-
+// GET `/companies/${companyId}/contract-forms`
 /*
   Note:
     The form can use either a Submit button or the internal onChange to send form data back to the user
@@ -37,3 +37,12 @@ FormContainer.defaultProps = {
 const FormContainerMemo = memo(FormContainer, areEqualShallow);
 
 export { FormContainerMemo as Form };
+// import React, { memo } from 'react';
+// import { areEqual } from 'Utils/equalityChecks';
+// import { PeopleTabs } from './PeopleTabs';
+
+// const PeopleContainer = () => <PeopleTabs />;
+
+// const PeopleContainerMemo = memo(PeopleContainer, areEqual);
+
+// export { PeopleContainerMemo as PeopleContainer };

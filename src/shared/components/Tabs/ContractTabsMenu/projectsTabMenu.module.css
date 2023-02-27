@@ -56,10 +56,12 @@ button {
   justify-content: center;
 }
 .button {
-  width: 140px;
+  width: 250px;
 }
-
-.filterButtonContainer {
+.button > * {
+  margin-left: 10px;
+}
+.button .filterButtonContainer {
   margin-top: 12px;
   margin-right: 24px;
   width: 55px;

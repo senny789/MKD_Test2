@@ -1,0 +1,1 @@
+export { ContractsTabMenu } from './ContractsTabMenu';
